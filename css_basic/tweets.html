@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holmes' Tweets Page</title>
+    
+    <!-- Task 0: CSS Link Tags -->
+    <link href="base.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="Holmes world">
+    <!-- Task 1 & 3: Header with correct Flexbox structure -->
+    <header>
+        <nav>
+            <!-- Logo Element using span and a Unicode character (Rocket) -->
+            <span class="logo">&#x1F680;</span> 
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Task 1: Main container for Article and Aside (display: flex; flex-direction: row;) -->
+    <main>
+        <!-- Task 1 & 3: Article (flex: 2; overflow-y: auto;) -->
+        <article>
+            <h2>My Latest Tweets</h2>
+            <p>This page features embedded content, styled with our custom CSS.</p>
+            
+            <!-- Placeholder Tweet 1 -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Just finished integrating Flexbox into my website layout! It makes positioning so much cleaner. Highly recommend! 🚀 #CSS #WebDev</p>&mdash; Holbie Developer (@holbiesDev) <a href="https://twitter.com/holbiesDev/status/1727788800000000000?ref_src=twsrc%5Etfw">November 23, 2025</a>
+            </blockquote> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <!-- Placeholder Tweet 2 -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Don't forget the importance of responsive design! Using relative units and Flexbox helps ensure a great experience on any device. #ResponsiveDesign</p>&mdash; Holbie Developer (@holbiesDev) <a href="https://twitter.com/holbiesDev/status/1727788900000000000?ref_src=twsrc%5Etfw">November 22, 2025</a>
+            </blockquote> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
+            <!-- Placeholder for more content to ensure scrolling works -->
+            <h3>More Content</h3>
+            <p>This ensures the content area is tall enough to test the <code>overflow-y: auto</code> scrolling feature required for this task. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>End of article content.</p>
+        </article>
+
+        <!-- Task 1: Aside (flex: 1; overflow-y: auto;) -->
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Links and contextual information related to the latest tweets or social media topics.</p>
+            
+            <h3>Tweet Categories</h3>
+            <ul>
+                <li>#TechTalk</li>
+                <li>#CodingLife</li>
+                <li>#CSSBasics</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Holmes-dev93 - <a href="#" target="_blank">View on Twitter</a></p>
+    </footer>
+</body>
+</html>
