@@ -1,1 +1,57 @@
+/* -------------------------------------------
+ * Task 1: Positioning - CSS Flexbox Layout
+ * ------------------------------------------- */
 
+/*
+ * 1. Set <body> as a Flex Container with a column direction.
+ * This stacks the main components (<header>, <main>, <footer>) vertically.
+ */
+body {
+    display: flex;
+    flex-direction: column;
+    /* Optional: Ensure the body takes up the full viewport height */
+    min-height: 100vh; 
+    margin: 0; /* Remove default browser margin */
+}
+
+/*
+ * 2. Set <main> as a flexible item within <body> and a Flex Container itself.
+ * flex: auto ensures <main> occupies the remaining space in the column.
+ */
+main {
+    display: flex;
+    flex-direction: row; /* Stacks <article> and <aside> horizontally */
+    flex: auto; /* Allows <main> to grow and shrink to fill available vertical space */
+}
+
+/*
+ * 3. Define the proportions for the content areas within <main>.
+ * <article> takes 2/3 of the width (2 units).
+ * <aside> takes 1/3 of the width (1 unit).
+ */
+article {
+    flex: 2; /* Takes two parts of the available space */
+    /*
+     * 4. Ensure vertical scrolling within the article content area if content overflows.
+     */
+    overflow-y: auto; 
+    padding: 10px; /* Added for better content spacing */
+}
+
+aside {
+    flex: 1; /* Takes one part of the available space */
+    /*
+     * 4. Ensure vertical scrolling within the aside content area if content overflows.
+     */
+    overflow-y: auto;
+    padding: 10px; /* Added for better content spacing */
+}
+
+/* * Optional: Basic styling for visual clarity, not strictly required by the prompt 
+ * but helpful to see the flexbox boundaries.
+ */
+header, footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
