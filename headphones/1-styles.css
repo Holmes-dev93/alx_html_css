@@ -1,0 +1,80 @@
+/* ... (Existing code from 1-styles.css for Reset, Variables, Global, Header, and What We Do) ... */
+
+/* ------------------------------------------- */
+/* 5. Our Results Section Styling */
+/* ------------------------------------------- */
+.section-results {
+    /* Background image for the section */
+    background-image: url('images/smiles_bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+    text-align: center;
+    color: var(--color-white); /* Text color against the dark background */
+}
+
+.section-results h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.section-results p.subtitle {
+    font-size: 1.6rem;
+    max-width: 65rem;
+    margin: 0 auto 8rem;
+    color: var(--color-white);
+}
+
+/* Results Grid - Reusing feature-grid Flexbox logic */
+.results-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.result-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    /* Dimensions based on the pentagon design */
+    width: 19rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Placeholder for the pentagon image (This will be replaced by CSS shapes in Task 6) */
+    background-image: url('images/pentagone.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.result-item h3 {
+    font-size: 4.6rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.result-item span {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+/* Mobile Responsiveness (inside the @media (max-width: 480px) block) */
+@media (max-width: 480px) {
+    /* ... (existing mobile styles) ... */
+    
+    .results-grid {
+        flex-direction: column; 
+        gap: 5rem;
+        align-items: center; /* Center items on mobile */
+    }
+    
+    .section-results p.subtitle {
+        margin-bottom: 5rem;
+    }
+}
