@@ -1,0 +1,72 @@
+/*
+ * ----------------------------------------------------
+ * 11. Footer Styling
+ * ----------------------------------------------------
+ */
+
+.main-footer {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+    padding: var(--spacing-lg) 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md); /* Space between major items */
+}
+
+/* Social Icons Layout */
+.social-icons {
+    display: flex;
+    gap: var(--spacing-md);
+    order: 2; /* Default order, between logo and copyright */
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+/* Copyright Text Styling */
+.copyright {
+    font-size: 12px;
+    opacity: 0.8;
+    order: 3; /* Default order */
+}
+
+/*
+ * ----------------------------------------------------
+ * 12. Media Queries for Footer Mobile Layout
+ * ----------------------------------------------------
+ */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        order: 1;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .social-icons {
+        order: 2;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .copyright {
+        order: 3;
+    }
+}
