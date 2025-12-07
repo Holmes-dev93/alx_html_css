@@ -1,0 +1,45 @@
+/* Remove the old checkbox input hiding rule */
+/* .menu-toggle-input { display: none; } */
+
+
+/* * ----------------------------------------------------
+ * 2. Navigation Bar Styling (Updated)
+ * ----------------------------------------------------
+ */
+
+/* Hide the button by default (Desktop view) */
+.menu-toggle-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    order: 1; /* Match the visual position of the old label */
+}
+
+/* Styling for the hamburger icon lines (same as before) */
+.menu-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text-light);
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-text-light);
+    transition: transform 0.3s, top 0.3s;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    top: 8px;
+}
