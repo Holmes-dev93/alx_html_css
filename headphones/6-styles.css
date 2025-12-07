@@ -1,0 +1,46 @@
+/* ... (Existing code from 4-styles.css) ... */
+
+/* ------------------------------------------- */
+/* 5. Our Results Section Styling - TASK 6 UPDATE */
+/* ------------------------------------------- */
+
+.result-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    width: 19rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* --- REMOVE background-image and replace with pseudo-element --- */
+    background-image: none; /* Ensure no image is loaded */
+    background-color: transparent; 
+    overflow: hidden; /* Important for containing the pentagon shape */
+}
+
+/* CSS Pentagon Drawing using a rotated pseudo-element */
+/* The pentagon is created using a large square (::before) that is rotated (18deg)
+   and positioned largely outside the container, leaving only the five-sided shape visible. */
+.result-item::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: var(--color-primary); /* The color of the pentagon */
+    /* Rotate the background to form the pentagon shape */
+    transform: rotate(18deg); 
+    z-index: 0; 
+}
+
+/* Bring the content (h3 and span) above the pseudo-element pentagon */
+.result-item h3,
+.result-item span {
+    position: relative;
+    z-index: 1; 
+}
+
+/* ... (Rest of the styles) ... */
