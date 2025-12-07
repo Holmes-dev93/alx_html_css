@@ -1,0 +1,40 @@
+/*
+ * ----------------------------------------------------
+ * 9. "Contact us" Section Styling
+ * ----------------------------------------------------
+ */
+
+.contact-section {
+    padding: var(--spacing-lg) 0;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-form {
+    max-width: 400px; /* Constrain the form width for better readability */
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Grouping for label and input */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Hide labels visually but keep them for screen readers (Accessibility) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
