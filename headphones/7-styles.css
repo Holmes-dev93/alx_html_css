@@ -1,0 +1,17 @@
+/* Styling for the service block item */
+.service-block {
+    /* Ensure a fixed size or a known boundary for smooth scaling */
+    text-align: center;
+    padding: var(--spacing-sm);
+    
+    /* 1. Add Transition for smooth animation */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 2. Define the hover effect */
+.service-block:hover {
+    /* Scale the item up slightly */
+    transform: scale(1.05);
+    /* Add a subtle lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
