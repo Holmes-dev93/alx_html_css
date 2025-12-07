@@ -1,1 +1,53 @@
+/*
+ * ----------------------------------------------------
+ * 1. CSS Reset and Global Variables
+ * ----------------------------------------------------
+ */
 
+/* Minimal CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define CSS Variables */
+:root {
+    /* Colors */
+    --color-primary: #FF6565;
+    --color-text-light: #FFFFFF;
+    --color-text-dark: #000000;
+    --color-background-dark: #071629;
+    --color-background-light: #FFFFFF;
+
+    /* Fonts */
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 48px;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family-base);
+    color: var(--color-text-dark);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+ul {
+    list-style: none;
+}
