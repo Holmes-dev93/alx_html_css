@@ -1,0 +1,31 @@
+/* base.css */
+
+/* Set a default font and remove browser default margins */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Ensure images don't overflow their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style headings consistently */
+h1, h2, h3 {
+    color: #111;
+}
+
+/* Basic styling for links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
