@@ -1,55 +1,16 @@
-/* base.css */
-
-/* General page setup */
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Understanding the Box Model */
-article {
-    margin: 10px;    /* Space outside the element */
-    border: 1px solid #ccc; /* The visible boundary */
-    padding: 15px;  /* Space inside the boundary */
-}
-
-/* Basic selector styling */
-h1 {
-    color: #0056b3;
-}
-
-a {
-    color: #1da1f2; /* Twitter blue */
-    text-decoration: none;
-}
-/* Set a default font and remove browser default margins */
-body {
+    color: #161616;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
+}
+
+header, footer {
+    background-color: #f3f3f3;
     padding: 20px;
-    line-height: 1.6;
-    color: #333;
 }
 
-/* Ensure images don't overflow their containers */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Style headings consistently */
-h1, h2, h3 {
-    color: #111;
-}
-
-/* Basic styling for links */
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
+.logo {
+    font-size: 2rem;
+    list-style: none;
 }
