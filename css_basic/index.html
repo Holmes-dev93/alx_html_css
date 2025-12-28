@@ -2,79 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holmes' CSS Homepage</title>
-    
-    <!-- Task 0: CSS Link Tags -->
+    <title>Your Title</title>
     <link href="base.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
-<body class="Holmes world">
-    <!-- Task 1 & 3: Header with correct Flexbox structure -->
+<body>
     <header>
-        <nav>
-            <!-- Logo Element using span and a Unicode character (Rocket) -->
-            <span class="logo">&#x1F680;</span> 
-            
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tweets.html">Tweets</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
+        <h1>Homepage</h1>
+        <a href="index.html">Home</a>
+        <a href="tweets.html">Tweets</a>
     </header>
-
-    <!-- Task 1: Main container for Article and Aside (display: flex; flex-direction: row;) -->
     <main>
-        <!-- Task 1 & 3: Article (flex: 2; overflow-y: auto;) -->
         <article>
-            <h2>Welcome to My CSS Project</h2>
-            <p>This page demonstrates a responsive layout built using CSS Flexbox. The header, main content area, and footer are stacked vertically, while the main content is split into two columns: the primary article and the sidebar.</p>
-            
-            <h3>Flexbox Layout Explained</h3>
-            <p>The <code>&lt;body&gt;</code> element is a flex container with <code>flex-direction: column</code>. The <code>&lt;main&gt;</code> container is also a flex container, but with <code>flex-direction: row</code>, which is what puts the <code>&lt;article&gt;</code> and <code>&lt;aside&gt;</code> side-by-side.</p>
-
-            <h3>The 2/3 and 1/3 Split</h3>
-            <p>The <code>&lt;article&gt;</code> uses <code>flex: 2</code>, taking up two parts of the available space, while the <code>&lt;aside&gt;</code> uses <code>flex: 1</code>, taking up one part. This creates a perfect two-thirds/one-third column split, regardless of the screen size.</p>
-
-            <h3>Scrolling Test Content</h3>
-            <p>To test the <code>overflow-y: auto</code> property, here is some extra content that should force the article to scroll vertically. If you see a scrollbar appear when the content goes beyond the viewport height, the property is working correctly.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Further scrolling content...</p>
-            <p>Further scrolling content...</p>
-            <p>Further scrolling content...</p>
-            <p>Further scrolling content...</p>
-            <p>Further scrolling content...</p>
-            <p>Further scrolling content...</p>
-            <p>End of scrolling test.</p>
+            <h1>My First Article</h1>
+            <p>This is a paragraph of text.</p>
         </article>
-
-        <!-- Task 1: Aside (flex: 1; overflow-y: auto;) -->
         <aside>
-            <h2>Sidebar</h2>
-            <p>This section is styled with a light gray background and takes up one-third of the main content area's width.</p>
-            <p>It can contain supplementary information, navigation links, or advertisements.</p>
-            
-            <h3>Related Links</h3>
-            <ul>
-                <li><a href="#">About CSS</a></li>
-                <li><a href="#">Flexbox Guide</a></li>
-                <li><a href="#">W3C Specs</a></li>
-            </ul>
-            
-            <h3>Scrolling Test</h3>
-            <p>This aside also has <code>overflow-y: auto</code> applied.</p>
-            <p>More scrolling content for aside...</p>
-            <p>More scrolling content for aside...</p>
-            <p>More scrolling content for aside...</p>
-            <p>More scrolling content for aside...</p>
-            <p>End of aside scrolling test.</p>
+            <p>Placeholder for sidebar</p>
         </aside>
     </main>
-
-    <!-- Footer -->
     <footer>
-        <p>Made by Holmes-dev93 - <a href="#" target="_blank">Privacy Policy</a></p>
+        <p>Made by Holmes-dev93</p>
     </footer>
 </body>
 </html>
